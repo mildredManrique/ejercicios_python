@@ -1,13 +1,16 @@
 class Album:
-    def __init__(self, title, artist):
+    def __init__(self, title, artist, genre, price):
         self.title = title
         self.artist = artist
+        self.genre = genre
+        self.price = price
     
-    def suma_dos_numeros(self, a, b):
-        return a + b
+ 
 
-album1 = Album("1989", "Taylor Swift")
+album1 = Album("1989", "Taylor Swift", "Pop", 19.99)
 print("Album: ", album1.title)
 print("Artist: ", album1.artist)
+print("Genre: ", album1.genre)
+print("Price: ", album1.price)
 
-print("Resultado: ", album1.suma_dos_numeros(8, 9)) 
+print(album1.title, "-", album1.artist, "-", album1.genre, "- $", album1.price)
